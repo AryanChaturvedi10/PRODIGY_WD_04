@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Chaturvedi - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="portfolio.css">
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-stone-200 text-stone-800">
+
+    <!-- Navigation Bar -->
+    <nav class="p-6 flex justify-between items-center shadow-md bg-stone-300 sticky top-0 z-50 border-b border-stone-400">
+        <h1 class="text-3xl font-bold text-[#A0522D]">Aryan Chaturvedi</h1>
+        <ul class="flex space-x-6">
+            <li><a href="#home" class="text-lg text-stone-700 hover:text-[#A0522D] transition duration-300">Home</a></li>
+            <li><a href="#about" class="text-lg text-stone-700 hover:text-[#A0522D] transition duration-300">About Me</a></li>
+            <li><a href="#skills" class="text-lg text-stone-700 hover:text-[#A0522D] transition duration-300">Skills</a></li>
+            <li><a href="#projects" class="text-lg text-stone-700 hover:text-[#A0522D] transition duration-300">Projects</a></li>
+            <li><a href="#contact" class="text-lg text-stone-700 hover:text-[#A0522D] transition duration-300">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="flex flex-col md:flex-row items-center justify-center p-8 md:p-16 min-h-[calc(100vh-80px)] bg-stone-200">
+        <div class="flex-shrink-0 mb-8 md:mb-0 md:mr-12">
+            <!-- Professional Photo -->
+            <img
+                src="Aryann.jpg"
+                alt="Aryan Chaturvedi's Photo"
+                class="rounded-full shadow-lg border-4 border-[#A0522D] w-48 h-48 object-cover transform hover:scale-105 transition duration-300"
+                onerror="this.onerror=null;this.src='https://placehold.co/200x200/A0522D/FFFFFF?text=Photo+Error';"
+            />
+        </div>
+        <div class="text-center md:text-left max-w-2xl">
+            <h2 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4 text-stone-900 animate-fade-in-down">
+                Hi, I'm <span class="text-[#A0522D]">Aryan Chaturvedi</span>,
+                <br />A Passionate Web Developer
+            </h2>
+            <p class="text-xl md:text-2xl text-stone-700 mb-6 animate-fade-in-up">
+                Crafting engaging and efficient web experiences with modern technologies.
+            </p>
+            <div class="flex justify-center md:justify-start space-x-4">
+                <button class="bg-[#A0522D] hover:bg-[#8B4513] text-white font-bold py-3 px-8 rounded-full shadow-md transform hover:scale-105 transition duration-300">
+                    View My Work
+                </button>
+                <button class="bg-transparent border border-[#A0522D] text-[#A0522D] font-bold py-3 px-8 rounded-full shadow-md transform hover:scale-105 hover:bg-[#A0522D] hover:text-white transition duration-300">
+                    Contact Me
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="p-8 md:p-16 bg-stone-300 shadow-inner rounded-t-lg">
+        <h3 class="text-4xl font-bold text-center mb-10 text-[#A0522D]">About Me</h3>
+        <div class="max-w-4xl mx-auto bg-stone-200 p-8 rounded-lg shadow-lg hover:border-2 hover:border-[#A0522D] transition-all duration-300 text-stone-800 border border-stone-400">
+            <p class="text-lg mb-6 leading-relaxed">
+                Hello! I'm Aryan Chaturvedi, a dedicated web developer with a strong passion for creating
+                dynamic and responsive web applications. My journey into web development began
+                during my time as a computer engineering student, where I discovered the power of code to bring ideas to life.
+                Since then, I've been continuously learning and adapting to the ever-evolving
+                landscape of web technologies.
+            </p>
+            <p class="text-lg mb-6 leading-relaxed">
+                <span class="font-semibold text-[#A0522D]">Education:</span> I am currently a 3rd-year
+                Computer Engineering student at Silver Oak University. My coursework has provided
+                me with a solid foundation in software development, data structures, algorithms, and
+                user interface design.
+            </p>
+            <p class="text-lg leading-relaxed">
+                <span class="font-semibold text-[#A0522D]">Experience:</span> While still pursuing my degree,
+                I have actively engaged in various personal projects, building practical
+                experience in frontend and backend development. I am eager to apply my skills in real-world
+                scenarios and contribute to innovative projects. I'm proficient in [list key technologies,
+                e.g., "HTML, CSS, JavaScript, Tailwind CSS, Node.js, Python"]. I thrive in environments
+                where I can solve complex problems and continuously grow.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="p-8 md:p-16 bg-stone-200">
+        <h3 class="text-4xl font-bold text-center mb-10 text-[#A0522D]">My Skills</h3>
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Frontend Development Skill Card -->
+            <div class="bg-stone-300 p-6 rounded-lg shadow-lg hover:shadow-xl hover:border-2 hover:border-[#A0522D] transition-all duration-300 text-stone-800 border border-stone-400">
+                <h4 class="text-2xl font-semibold mb-3 text-[#A0522D]">Frontend Development</h4>
+                <ul class="list-disc list-inside">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Responsive Design</li>
+                    <li>Tailwind CSS</li>
+                </ul>
+            </div>
+            <!-- Backend Development Skill Card -->
+            <div class="bg-stone-300 p-6 rounded-lg shadow-lg hover:shadow-xl hover:border-2 hover:border-[#A0522D] transition-all duration-300 text-stone-800 border border-stone-400">
+                <h4 class="text-2xl font-semibold mb-3 text-[#A0522D]">Backend Development</h4>
+                <ul class="list-disc list-inside">
+                    <li>Node.js, Express.js</li>
+                    <li>Python, Django, Flask</li>
+                    <li>RESTful APIs, GraphQL</li>
+                    <li>Database Management (MongoDB, PostgreSQL)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="p-8 md:p-16 bg-stone-300 shadow-inner rounded-t-lg">
+        <h3 class="text-4xl font-bold text-center mb-10 text-[#A0522D]">My Projects</h3>
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-stone-200 p-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-102 hover:border-2 hover:border-[#A0522D] transition-all duration-300 text-stone-800 border border-stone-400">
+                <h4 class="text-2xl font-semibold mb-3 text-[#A0522D]">Finpay Website</h4>
+                <p>A modern financial payment website built with [mention technologies, e.g., HTML, CSS, JavaScript].</p>
+            </div>
+            <div class="bg-stone-200 p-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-102 hover:border-2 hover:border-[#A0522D] transition-all duration-300 text-stone-800 border border-stone-400">
+                <h4 class="text-2xl font-semibold mb-3 text-[#A0522D]">Weather Web App</h4>
+                <p>A dynamic weather application fetching real-time data using a weather API (e.g., OpenWeatherMap).</p>
+            </div>
+            <div class="bg-stone-200 p-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-102 hover:border-2 hover:border-[#A0522D] transition-all duration-300 text-stone-800 border border-stone-400">
+                <h4 class="text-2xl font-semibold mb-3 text-[#A0522D]">Stopwatch</h4>
+                <p>A functional stopwatch application with start, stop, and reset features, implemented with JavaScript.</p>
+            </div>
+            <div class="bg-stone-200 p-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-102 hover:border-2 hover:border-[#A0522D] transition-all duration-300 text-stone-800 border border-stone-400">
+                <h4 class="text-2xl font-semibold mb-3 text-[#A0522D]">Tic Tac Toe Game</h4>
+                <p>An interactive Tic Tac Toe game developed using HTML, CSS, and JavaScript.</p>
+            </div>
+            <!-- You can add more projects here following the same structure -->
+        </div>
+    </section>
+
+    <!-- Contact Section (Placeholder) -->
+    <section id="contact" class="p-8 md:p-16 bg-stone-200">
+        <h3 class="text-4xl font-bold text-center mb-10 text-[#A0522D]">Get in Touch</h3>
+        <div class="max-w-2xl mx-auto text-center text-stone-700">
+            <p class="text-lg mb-6">
+                I'm always open to new opportunities and collaborations. Feel free to reach out!
+            </p>
+            <p class="text-xl font-semibold text-[#A0522D] mb-4">
+                Email: <a href="aryanchaturvedii@gmail.com" class="hover:underline">aryanchaturvedii@gmail.com</a>
+            </p>
+            <p class="text-xl font-semibold text-[#A0522D]">
+             LinkedIn: <a href="https://www.linkedin.com/in/aryan-chaturvedi10" target="_blank" rel="noopener noreferrer" class="hover:underline">www.linkedin.com/in/aryan-chaturvedi10</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-6 text-center text-stone-600 text-sm bg-stone-400 shadow-inner border-t border-stone-500">
+        <p>&copy; <span id="currentYear"></span> Aryan Chaturvedi. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+        &#9650; <!-- Up arrow character -->
+    </button>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
